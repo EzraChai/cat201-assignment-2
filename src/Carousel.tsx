@@ -79,7 +79,7 @@ export function EmblaCarousel() {
   return (
     <div className="mt-8 max-w-7xl p-4 mx-auto flex">
       <button
-        className="group border-2 border-black bg-white hover:bg-red-500 px-4 py-2 ml-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all"
+        className="group border-2 hover:cursor-pointer border-black bg-white hover:bg-red-500 px-4 py-2 ml-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all"
         onClick={scrollPrev}
       >
         <ChevronLeft className="group-hover:text-white transition-all" />
@@ -112,7 +112,7 @@ export function EmblaCarousel() {
         </div>
       </div>
       <button
-        className="group border-2 border-black bg-white hover:bg-red-500 px-4 py-2 ml-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all"
+        className="group border-2 hover:cursor-pointer border-black bg-white hover:bg-red-500 px-4 py-2 ml-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all"
         onClick={scrollNext}
       >
         <ChevronRight className="group-hover:text-white transition-all" />
