@@ -85,7 +85,7 @@ export function EmblaCarousel() {
         <ChevronLeft />
       </button>
       <div
-        className="border-2 mx-4 w-full overflow-hidden p-4 px-8"
+        className="border-2 mx-4 w-full overflow-hidden pt-4 pb-6 px-8"
         ref={emblaRef}
       >
         <div className="flex gap-4 px-4">
@@ -94,7 +94,7 @@ export function EmblaCarousel() {
               key={comment.id}
               className="grow-0 shrink-0 basis-1/3 min-w-0 mx-2"
             >
-              <div className="border-2 border-black bg-white p-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">
+              <div className="border-2 border-black bg-white hover:bg-yellow-100 p-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">
                 <div className="">
                   <h1 className="font-black text-base md:text-2xl">
                     {comment.title}
