@@ -77,22 +77,22 @@ export function EmblaCarousel() {
   }, [emblaApi]);
 
   return (
-    <div className="mt-8 max-w-7xl p-4 mx-auto flex">
+    <div className="mt-8 w-full max-w-7xl md:p-4 mx-auto flex">
       <button
-        className="group border-2 hover:cursor-pointer border-black bg-white hover:bg-red-500 px-4 py-2 ml-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all"
+        className="group border-2 hidden md:block hover:cursor-pointer border-black bg-white hover:bg-red-500 px-4 py-2 ml-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all"
         onClick={scrollPrev}
       >
         <ChevronLeft className="group-hover:text-white transition-all" />
       </button>
       <div
-        className="border-2 mx-4 w-full overflow-hidden pt-4 pb-6 px-8"
+        className="border-0 md:border-2 bg-neutral-200 md:mx-4 w-full overflow-hidden pt-4 pb-6 md:px-8"
         ref={emblaRef}
       >
-        <div className="flex gap-4 px-4">
+        <div className="flex gap-4 md:px-4">
           {COMMENTS.map((comment) => (
             <div
               key={comment.id}
-              className="grow-0 shrink-0 basis-1/3 min-w-0 mx-2"
+              className="grow-0 shrink-0 basis-80 md:basis-1/3 min-w-0 mx-2"
             >
               <div className="border-2 border-black bg-white hover:bg-yellow-100 p-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">
                 <div className="">
@@ -112,10 +112,10 @@ export function EmblaCarousel() {
         </div>
       </div>
       <button
-        className="group border-2 hover:cursor-pointer border-black bg-white hover:bg-red-500 px-4 py-2 ml-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all"
+        className="group border-2 hidden md:block hover:cursor-pointer border-black bg-white hover:bg-red-500 px-4 py-2 ml-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all"
         onClick={scrollNext}
       >
-        <ChevronRight className="group-hover:text-white transition-all" />
+        <ChevronRight className="group-hover:text-white transition-all " />
       </button>
     </div>
   );
