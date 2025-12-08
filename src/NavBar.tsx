@@ -2,7 +2,7 @@ import { NavLink } from "react-router";
 
 function NavBar() {
   return (
-    <nav className="w-full flex items-center justify-between absolute top-0 p-2 md:p-8 mx-auto">
+    <nav className="w-full fixed flex items-center justify-between top-0 p-2 md:p-8 mx-auto">
       <NavLink
         to={"/"}
         className={({ isActive }) =>
