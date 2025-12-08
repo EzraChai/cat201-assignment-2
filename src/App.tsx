@@ -20,7 +20,7 @@ function App() {
       <hr className="border-2 border-black" />
       <section className="max-w-7xl mx-auto">
         <h2 className="text-center mt-12 mb-4 font-black text-xl md:text-3xl">
-          WHAT DO WE DO
+          What We Do?
         </h2>
         <div className="grid md:grid-cols-3 p-4 pr-6 gap-8 mb-20">
           <div className="flex flex-col border-2 border-black bg-white px-4 py-2 ml-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">
@@ -72,12 +72,12 @@ function App() {
       </section>
       <section>
         <h2 className="text-center mt-12 mb-4 font-black text-xl md:text-3xl">
-          HERE'S WHAT OUR CLIENTS SAY
+          Here's What Our Clients Say
         </h2>
         <EmblaCarousel />
       </section>
       <h2 className="text-center mt-12 mb-4 font-black text-xl md:text-3xl">
-        TRUSTED BY
+        Trusted By
       </h2>
       <TrustedBy />
     </>

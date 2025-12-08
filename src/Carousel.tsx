@@ -79,10 +79,10 @@ export function EmblaCarousel() {
   return (
     <div className="mt-8 max-w-7xl p-4 mx-auto flex">
       <button
-        className="border-2 border-black bg-white px-4 py-2 ml-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all"
+        className="group border-2 border-black bg-white hover:bg-red-500 px-4 py-2 ml-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all"
         onClick={scrollPrev}
       >
-        <ChevronLeft />
+        <ChevronLeft className="group-hover:text-white transition-all" />
       </button>
       <div
         className="border-2 mx-4 w-full overflow-hidden pt-4 pb-6 px-8"
@@ -99,7 +99,7 @@ export function EmblaCarousel() {
                   <h1 className="font-black text-base md:text-2xl">
                     {comment.title}
                   </h1>
-                  <p className="mt-2 font-medium text-xs md:text-base text-neutral-600">
+                  <p className="mt-2 text-justify font-medium text-xs md:text-base text-neutral-600">
                     {comment.body}
                   </p>
                   <p className="mt-4 text-right font-medium text-xs text-neutral-500">
@@ -112,10 +112,10 @@ export function EmblaCarousel() {
         </div>
       </div>
       <button
-        className="border-2 border-black bg-white px-4 py-2 ml-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all"
+        className="group border-2 border-black bg-white hover:bg-red-500 px-4 py-2 ml-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all"
         onClick={scrollNext}
       >
-        <ChevronRight />
+        <ChevronRight className="group-hover:text-white transition-all" />
       </button>
     </div>
   );
