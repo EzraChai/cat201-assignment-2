@@ -1,6 +1,7 @@
 import { Code, LaptopMinimal, Smartphone } from "lucide-react";
 import "./App.css";
 import TrustedBy from "./TrustedBy";
+import { EmblaCarousel } from "./Carousel";
 
 function App() {
   return (
@@ -69,11 +70,16 @@ function App() {
       <section className="flex justify-center items-center">
         <div className="my-12 mr-2 flex aspect-video flex-col border-2 border-black bg-white px-4 py-2 ml-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all"></div>
       </section>
+      <section>
+        <h2 className="text-center mt-12 mb-4 font-black text-xl md:text-3xl">
+          HERE'S WHAT OUR CLIENTS SAY
+        </h2>
+        <EmblaCarousel />
+      </section>
       <h2 className="text-center mt-12 mb-4 font-black text-xl md:text-3xl">
         TRUSTED BY
       </h2>
       <TrustedBy />
-      {/* <hr className="border-2 border-black" /> */}
     </>
   );
 }
