@@ -6,9 +6,7 @@ import { EmblaCarousel } from "./Carousel";
 function App() {
   return (
     <>
-      <head>
-        <title>Home | Purple Giant</title>
-      </head>
+      <title>Home | Purple Giant</title>
       <section className="bg-[#ff6b6b] w-full h-80 md:h-100 flex flex-col justify-center items-center">
         <h1 className="text-white text-3xl md:text-5xl font-black p-4 drop-shadow-[4px_4px_0_#000]">
           WE TURN IDEAS INTO
