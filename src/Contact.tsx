@@ -1,8 +1,19 @@
-import { Mail, MapPin, Phone, Send } from "lucide-react";
+import { Circle, Loader, Mail, MapPin, Phone, Send } from "lucide-react";
+import { useState } from "react";
 
 function Contact() {
+  const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
+
+  function isValidEmail(email: string) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    setSuccess(null);
+    setError(null);
 
     const form = e.currentTarget as HTMLFormElement;
     const formElements = form.elements as typeof form.elements & {
@@ -10,6 +21,28 @@ function Contact() {
       email: HTMLInputElement;
       message: HTMLTextAreaElement;
     };
+
+    const name = formElements.name.value.trim();
+    const email = formElements.email.value.trim();
+    const message = formElements.message.value.trim();
+
+    // ✅ Client-side checks
+    if (!name || !email || !message) {
+      setError("All fields are required.");
+      return;
+    }
+
+    if (!isValidEmail(email)) {
+      setError("Please enter a valid email address.");
+      return;
+    }
+
+    if (message.length < 10) {
+      setError("Message must be at least 10 characters.");
+      return;
+    }
+
+    setLoading(true);
 
     const res = await fetch("/api/contact", {
       method: "POST",
@@ -22,10 +55,12 @@ function Contact() {
     });
 
     if (res.ok) {
-      alert("Message sent!");
+      setSuccess("Message sent!");
       form.reset();
+      setLoading(false);
     } else {
-      alert("Failed to send message");
+      setError("Failed to send message");
+      setLoading(false);
     }
   }
 
@@ -95,45 +130,67 @@ function Contact() {
           </div>
 
           {/* Contact Form Column */}
-          <div className="bg-white border-4 border-black p-6 md:p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-            <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
-              <div>
-                <label className="block font-black text-lg mb-2">NAME</label>
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Ali"
-                  className="w-full bg-neutral-100 border-2 border-black p-3 font-medium focus:outline-none focus:ring-0 focus:bg-[#fff0f0] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all"
-                />
-              </div>
+          <div className="">
+            {error && (
+              <p className="text-red-500 bg-red-200 mb-6 w-full border-2 border-black p-3 font-medium focus:outline-none focus:ring-0 focus:bg-[#fff0f0] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                <span className="font-black">Error: </span> {error}
+              </p>
+            )}
+            {success && (
+              <p className="text-green-600 bg-green-200 mb-6 w-full border-2 border-black p-3 font-medium focus:outline-none focus:ring-0 focus:bg-[#fff0f0] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                <span className="font-black">Success: </span> {success}
+              </p>
+            )}
+            <div className="bg-white border-4 border-black p-6 md:p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+              <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
+                <div>
+                  <label className="block font-black text-lg mb-2">NAME</label>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Ali"
+                    className="w-full bg-neutral-100 border-2 border-black p-3 font-medium focus:outline-none focus:ring-0 focus:bg-[#fff0f0] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all"
+                  />
+                </div>
 
-              <div>
-                <label className="block font-black text-lg mb-2">EMAIL</label>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="ali@gmail.com"
-                  className="w-full bg-neutral-100 border-2 border-black p-3 font-medium focus:outline-none focus:ring-0 focus:bg-[#fff0f0] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all"
-                />
-              </div>
+                <div>
+                  <label className="block font-black text-lg mb-2">EMAIL</label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="ali@gmail.com"
+                    className="w-full bg-neutral-100 border-2 border-black p-3 font-medium focus:outline-none focus:ring-0 focus:bg-[#fff0f0] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all"
+                  />
+                </div>
 
-              <div>
-                <label className="block font-black text-lg mb-2">MESSAGE</label>
-                <textarea
-                  rows={10}
-                  name="message"
-                  placeholder="Tell us about your project..."
-                  className="w-full bg-neutral-100 border-2 border-black p-3 font-medium focus:outline-none focus:ring-0 focus:bg-[#fff0f0] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all resize-none"
-                ></textarea>
-              </div>
+                <div>
+                  <label className="block font-black text-lg mb-2">
+                    MESSAGE
+                  </label>
+                  <textarea
+                    rows={10}
+                    name="message"
+                    placeholder="Tell us about your project..."
+                    className="w-full bg-neutral-100 border-2 border-black p-3 font-medium focus:outline-none focus:ring-0 focus:bg-[#fff0f0] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all resize-none"
+                  ></textarea>
+                </div>
 
-              <button
-                type="submit"
-                className="flex justify-center items-center gap-2 bg-black text-white font-black text-xl py-4 border-2 border-transparent hover:bg-white hover:text-black hover:border-black shadow-[4px_4px_0px_0px_rgba(128,128,128,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all mt-2 cursor-pointer"
-              >
-                SEND MESSAGE <Send className="w-5 h-5" />
-              </button>
-            </form>
+                <button
+                  type="submit"
+                  className="flex justify-center items-center gap-2 bg-black text-white font-black text-xl py-4 border-2 border-transparent hover:bg-white hover:text-black hover:border-black shadow-[4px_4px_0px_0px_rgba(128,128,128,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all mt-2 cursor-pointer"
+                >
+                  {loading ? (
+                    <>
+                      <Loader className="w-5 h-5 animate-spin" />
+                    </>
+                  ) : (
+                    <>
+                      SEND MESSAGE <Send className="w-5 h-5" />
+                    </>
+                  )}
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
