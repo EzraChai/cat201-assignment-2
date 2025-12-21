@@ -4,15 +4,20 @@ function Contact() {
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
-    const form = e.target;
+    const form = e.currentTarget as HTMLFormElement;
+    const formElements = form.elements as typeof form.elements & {
+      name: HTMLInputElement;
+      email: HTMLInputElement;
+      message: HTMLTextAreaElement;
+    };
 
     const res = await fetch("/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        name: form.name.value,
-        email: form.email.value,
-        message: form.message.value,
+        name: formElements.name.value,
+        email: formElements.email.value,
+        message: formElements.message.value,
       }),
     });
 
