@@ -1,4 +1,4 @@
-import { Circle, Loader, Mail, MapPin, Phone, Send } from "lucide-react";
+import { Loader, Mail, MapPin, Phone, Send } from "lucide-react";
 import { useState } from "react";
 
 function Contact() {
