@@ -92,7 +92,10 @@ function Contact() {
             </p>
 
             <div className="flex flex-col gap-6 mt-4">
-              <div className="flex items-center gap-4 border-2 border-black bg-white p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all">
+              <a
+                href="mailto:purplegiant@gmail.com"
+                className="flex items-center gap-4 border-2 border-black bg-white p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all"
+              >
                 <div className="bg-[#ff6b6b] p-3 border-2 border-black">
                   <Mail className="w-6 h-6 text-black" />
                 </div>
@@ -102,29 +105,38 @@ function Contact() {
                     purplegiant@gmail.com
                   </p>
                 </div>
-              </div>
+              </a>
 
-              <div className="flex items-center gap-4 border-2 border-black bg-white p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all">
+              <a
+                href="tel:+60123456789"
+                aria-label="Call +60 12 345 6789"
+                className="flex items-center gap-4 border-2 border-black bg-white p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all"
+              >
                 <div className="bg-[#a78bfa] p-3 border-2 border-black">
                   <Phone className="w-6 h-6 text-black" />
                 </div>
                 <div>
                   <h3 className="font-bold text-lg">Call Us</h3>
-                  <p className="font-medium text-neutral-600">+6011-56529022</p>
+                  <p className="font-medium text-neutral-600">+6012-3456789</p>
                 </div>
-              </div>
+              </a>
 
               <div className="flex items-center gap-4 border-2 border-black bg-white p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all">
                 <div className="bg-[#34d399] p-3 border-2 border-black">
                   <MapPin className="w-6 h-6 text-black" />
                 </div>
-                <div>
+                <a
+                  href="https://maps.app.goo.gl/BDvgct41weXz5qmG9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <h3 className="font-bold text-lg">Visit Us</h3>
                   <p className="font-medium text-neutral-600">
                     {" "}
-                    123,Jalan Masjid Negeri,George Town, Penang
+                    School of Computer Sciences, Universiti Sains Malaysia,
+                    11800 USM Penang, Malaysia{" "}
                   </p>
-                </div>
+                </a>
               </div>
             </div>
           </div>
