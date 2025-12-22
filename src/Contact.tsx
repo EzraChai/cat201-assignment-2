@@ -93,7 +93,7 @@ function Contact() {
 
             <div className="flex flex-col gap-6 mt-4">
               <a
-                href="mailto:purplegiant@gmail.com"
+                href="mailto:purplegolem@gmail.com"
                 className="flex items-center gap-4 border-2 border-black bg-white p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all"
               >
                 <div className="bg-[#ff6b6b] p-3 border-2 border-black">
@@ -102,7 +102,7 @@ function Contact() {
                 <div>
                   <h3 className="font-bold text-lg">Email Us</h3>
                   <p className="font-medium text-neutral-600">
-                    purplegiant@gmail.com
+                    purplegolem@gmail.com
                   </p>
                 </div>
               </a>

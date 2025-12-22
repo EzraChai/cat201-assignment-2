@@ -12,7 +12,7 @@ function NavBar() {
         }
       >
         <img
-          src="/purple_giant.png"
+          src="/purple_golem.png"
           className=" w-4 h-4 md:w-6 md:h-6"
           alt="Logo"
         />
