@@ -33,7 +33,7 @@ export default function PreviousProjects() {
       <p className="text-center">
         Projects that we&apos;ve done for our clients.
       </p>
-      <div className="my-12 md:my-0">
+      <div className="my-12">
         {projects.map((project, index) => (
           <Project
             key={project.projectTitle + index}
@@ -68,7 +68,7 @@ function Project({
   return (
     <a
       href={hrefLink}
-      className="grid md:grid-cols-2 w-full my-6 gap-4 md:my-24 md:gap-12 "
+      className="grid md:grid-cols-2 w-full my-6 gap-4 md:mb-24 md:gap-12 "
     >
       <div
         className={`${
