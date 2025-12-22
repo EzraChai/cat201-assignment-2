@@ -6,6 +6,7 @@ import App from "./App.tsx";
 import AppLayout from "./AppLayout.tsx";
 import Contact from "./Contact.tsx";
 import NotFound from "./NotFound.tsx";
+import AboutUs from "./AboutUs.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -13,6 +14,7 @@ createRoot(document.getElementById("root")!).render(
       <Routes>
         <Route element={<AppLayout />}>
           <Route index path="/" element={<App />} />
+          <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Route>
