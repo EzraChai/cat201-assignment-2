@@ -66,7 +66,7 @@ function Contact() {
 
   return (
     <>
-      <title>Contact | Purple Giant</title>
+      <title>Contact | Purple Golem</title>
       {/* Hero Section */}
       <section className="bg-purple-300 w-full h-80 md:h-100 flex flex-col justify-center items-center">
         <h1 className="text-white text-3xl md:text-5xl font-black p-4 drop-shadow-[4px_4px_0_#000]">

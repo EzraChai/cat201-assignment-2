@@ -7,7 +7,7 @@ import PreviousProjects from "./PreviousProjects";
 function App() {
   return (
     <>
-      <title>Home | Purple Giant</title>
+      <title>Home | Purple Golem</title>
       <section className="bg-[#ff6b6b] w-full h-80 md:h-100 flex flex-col justify-center items-center">
         <h1 className="text-white text-3xl md:text-5xl font-black p-4 drop-shadow-[4px_4px_0_#000]">
           WE TURN IDEAS INTO
