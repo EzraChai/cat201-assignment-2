@@ -24,12 +24,12 @@ function NavBar() {
         <NavLink
           to="/about-us"
           className={({ isActive }) =>
-           isActive
-             ? "bg-purple-100 border-2 p-2 md:p-4 border-black md:px-4 md:py-2 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:translate-x-px hover:translate-y-px hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all md:min-h-8 flex items-center"
-             : "bg-white border-2 p-2 md:p-4 border-black md:px-4 md:py-2 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:translate-x-px hover:translate-y-px hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all md:min-h-8 flex items-center"
-        }
+            isActive
+              ? "bg-indigo-100 border-2 p-2 md:p-4 border-black md:px-4 md:py-2 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:translate-x-px hover:translate-y-px hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all md:min-h-8 flex items-center"
+              : "bg-white border-2 p-2 md:p-4 border-black md:px-4 md:py-2 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:translate-x-px hover:translate-y-px hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all md:min-h-8 flex items-center"
+          }
         >
-        <h1 className="font-medium text-xs md:text-base">About Us</h1>
+          <h1 className="font-medium text-xs md:text-base">About Us</h1>
         </NavLink>
         <NavLink
           to={"/contact"}
