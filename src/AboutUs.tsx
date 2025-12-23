@@ -34,7 +34,7 @@ function AboutUs() {
       </section>
 
       <section className="max-w-7xl mx-auto px-4 py-12 md:py-20">
-        <div className="border-2 border-black bg-white p-6 md:p-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">
+        <div className="hover:bg-red-100 border-2 border-black bg-white p-6 md:p-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">
           <h2 className="text-2xl md:text-4xl font-black mb-4">
             About Purple Giant
           </h2>
@@ -58,7 +58,7 @@ function AboutUs() {
       </section>
 
       <section className="max-w-7xl mx-auto px-4 py-12 md:py-20 grid md:grid-cols-2 gap-8">
-        <div className="border-2 border-black bg-white p-6 md:p-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">
+        <div className="hover:bg-amber-100 border-2 border-black bg-white p-6 md:p-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">
           <h2 className="text-2xl md:text-3xl font-black mb-4">Our Mission</h2>
           <p className="font-medium text-neutral-700">
             To create reliable, scalable, and user-friendly web solutions that
@@ -66,7 +66,7 @@ function AboutUs() {
             digital experiences.
           </p>
         </div>
-        <div className="border-2 border-black bg-white p-6 md:p-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">
+        <div className="hover:bg-lime-100 border-2 border-black bg-white p-6 md:p-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">
           <h2 className="text-2xl md:text-3xl font-black mb-4">Our Vision</h2>
           <p className="font-medium text-neutral-700">
             To be recognized as a trusted digital solutions partner, delivering
