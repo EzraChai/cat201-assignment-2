@@ -196,9 +196,7 @@ function Contact() {
                       <Loader className="w-5 h-5 animate-spin" />
                     </>
                   ) : (
-                    <>
-                      SEND MESSAGE <Send className="w-5 h-5" />
-                    </>
+                    <>SEND MESSAGE</>
                   )}
                 </button>
               </form>
