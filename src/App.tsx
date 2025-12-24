@@ -1,7 +1,7 @@
 import { Code, LaptopMinimal, Smartphone } from "lucide-react";
 import "./App.css";
 import TrustedBy from "./TrustedBy";
-import { EmblaCarousel } from "./Carousel";
+import { Carousel } from "./Carousel";
 import PreviousProjects from "./PreviousProjects";
 
 function App() {
@@ -75,7 +75,7 @@ function App() {
         <h2 className="text-center mt-24 md:mt-32 mb-4 font-black text-xl md:text-3xl">
           Here's What Our Clients Say
         </h2>
-        <EmblaCarousel />
+        <Carousel />
       </section>
       <h2 className="text-center mt-24 mb-4 font-black text-xl md:text-3xl">
         Trusted By

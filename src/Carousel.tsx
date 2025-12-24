@@ -7,65 +7,65 @@ const COMMENTS = [
     id: 1,
     title: "Exceptional Custom Software",
     body: "Purple Golem transformed our operations with a solution built precisely around our workflow. Their team took the time to understand our challenges and delivered software that solved problems we had struggled with for years.",
-    author: "Adrian Lim, NovaMart",
+    author: "Google Product Team",
   },
   {
     id: 2,
     title: "Mobile App That Exceeded Expectations",
     body: "We needed an intuitive mobile app for both iOS and Android, and Purple Golem delivered beyond what we imagined. The app feels polished, loads fast, and our customers love the experience.",
-    author: "Sarah Yong, MyCare Solutions",
+    author: "AirAsia Digital Team",
   },
   {
     id: 3,
     title: "Reliable Web Development Partner",
     body: "From planning to deployment, Purple Golem handled everything with precision. Our new website is fast, secure, and beautifully responsive. Their communication was clear at every step, making the whole process stress-free.",
-    author: "Daniel Tan, Tritech",
+    author: "Tritech Engineering Team",
   },
   {
     id: 4,
     title: "Deep Understanding of Our Business",
     body: "What sets Purple Golem apart is how well they understand your needs. They didn’t just build software — they crafted a solution that fits seamlessly into our existing workflow.",
-    author: "Michelle Chen, UrbanEdge",
+    author: "Setel Product Team",
   },
   {
     id: 5,
     title: "Professional Team, On-Time Delivery",
     body: "Purple Golem consistently impressed us with their reliability. They delivered everything on schedule, solved issues quickly, and maintained excellent communication throughout the project.",
-    author: "Raymond Lau, VisionPlus",
+    author: "Maybank Technology Team",
   },
   {
     id: 6,
     title: "Seamless Integrations",
     body: "Purple Golem integrated our new system flawlessly with our existing tools. The transition was smooth and our team adapted very quickly.",
-    author: "Farah Hakim, SwiftLink",
+    author: "Touch ’n Go Engineering Team",
   },
   {
     id: 7,
     title: "Innovative Solutions",
     body: "The team at Purple Golem brought innovative ideas to the table that we hadn’t considered. Their custom solutions helped streamline our workflow and save significant time.",
-    author: "Jonathan Lee, Apex",
+    author: "Apex Operations Team",
   },
   {
     id: 8,
     title: "Intuitive Mobile Experience",
     body: "The mobile app Purple Golem built feels premium and polished. The design is intuitive, and our users always compliment how smooth everything feels.",
-    author: "Nur Aina, HelioWorks",
+    author: "GOXUAN Digital Team",
   },
   {
     id: 9,
     title: "Outstanding Support",
     body: "Purple Golem's support team is responsive and helpful. Any questions or tweaks were handled quickly, making our experience stress-free.",
-    author: "Kelvin Ong, BrightWave",
+    author: "BrightWave IT Team",
   },
   {
     id: 10,
     title: "Trusted Technology Partner",
     body: "Working with Purple Golem has been a pleasure. They are knowledgeable, professional, and genuinely care about delivering the best solution.",
-    author: "Lisa Tan, GreenLeaf",
+    author: "GreenLeaf Management Team",
   },
 ];
 
-export function EmblaCarousel() {
+export function Carousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
 
   const scrollPrev = useCallback(() => {
