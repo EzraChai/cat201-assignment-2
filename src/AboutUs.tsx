@@ -9,8 +9,7 @@ const TEAM = [
   {
     name: "Oi Li Jee",
     role: "CTO of Purple Golem",
-    photo:
-      "https://ui-avatars.com/api/?name=OiLiJee&background=ff6b6b&color=fff&size=256",
+    photo: "/profile/lijee.jpg",
   },
   {
     name: "Huam Jun Fei",
