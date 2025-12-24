@@ -15,7 +15,7 @@ const TEAM = [
     name: "Huam Jun Fei",
     role: "COO of Purple Golem",
     photo:
-      "https://ui-avatars.com/api/?name=HuamJunFei&background=ff6b6b&color=fff&size=256",
+      "/profile/junfei.jpg",
   },
 ];
 

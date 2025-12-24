@@ -4,14 +4,13 @@ export default function TrustedBy() {
     "/logos/airasia.png",
     "/logos/setel.png",
     "/logos/tng.jpg",
-    "/logos/intel.png",
+    "/logos/goxuan.png",
     "/logos/maybank.png",
   ];
 
   return (
     <div className="overflow-hidden whitespace-nowrap p-6 md:p-0 md:py-6 ">
       <div className="grid grid-cols-2 gap-6 md:flex md:justify-center md:items-center md:gap-16 ">
-        {/* Original set */}
         {logos.map((src, i) => (
           <img
             key={i}
