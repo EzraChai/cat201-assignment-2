@@ -14,14 +14,14 @@ const TEAM = [
   {
     name: "Huam Jun Fei",
     role: "COO of Purple Golem",
-    photo:
-      "/profile/junfei.jpeg",
+    photo: "/profile/junfei.jpeg",
   },
 ];
 
 function AboutUs() {
   return (
     <>
+      <title>About Us | Purple Golem</title>
       <section className="bg-indigo-500 w-full h-80 md:h-100 flex flex-col justify-center items-center">
         <h1 className="text-white text-3xl md:text-5xl font-black p-4 drop-shadow-[4px_4px_0_#000]">
           This Is Who We Are
