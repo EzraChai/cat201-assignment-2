@@ -24,7 +24,7 @@ function AboutUs() {
       <title>About Us | Purple Golem</title>
       <section className="bg-indigo-500 w-full h-80 md:h-100 flex flex-col justify-center items-center">
         <h1 className="text-white text-3xl md:text-5xl font-black p-4 drop-shadow-[4px_4px_0_#000]">
-          This Is Who We Are
+          THIS IS WHO WE ARE
         </h1>
         <span className="text-black text-4xl md:text-7xl font-black bg-blue-300 border-4 border-black px-4 py-2 ml-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">
           About Us
