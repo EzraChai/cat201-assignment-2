@@ -15,7 +15,7 @@ const TEAM = [
     name: "Huam Jun Fei",
     role: "COO of Purple Golem",
     photo:
-      "/profile/junfei.jpg",
+      "/profile/junfei.jpeg",
   },
 ];
 
