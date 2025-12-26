@@ -4,7 +4,7 @@ const TEAM = [
   {
     name: "Chai Juan Zhe",
     role: "CEO & Founder of Purple Golem",
-    photo: "/profile/ezra.jpg",
+    photo: "/profile/ezra.png",
   },
   {
     name: "Oi Li Jee",
