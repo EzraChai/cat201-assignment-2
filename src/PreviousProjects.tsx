@@ -81,7 +81,7 @@ function Project({
       <div
         className={`p-6 ${
           index % 2 === 0 ? "md:order-2" : "md:order-1"
-        }order-2 flex flex-col justify-center`}
+        } order-2 flex flex-col justify-center`}
       >
         <h3 className="text-2xl font-black mb-4">{projectTitle}</h3>
         <p className="text-neutral-700 mb-4">{projectDescription}</p>
