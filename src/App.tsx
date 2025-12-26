@@ -23,9 +23,7 @@ function App() {
         </h2>
         <div className="grid md:grid-cols-3 p-4 pr-6 gap-8 mb-20">
           <div className="flex flex-col border-2 border-black bg-white px-4 py-2 ml-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">
-            {/* <div className=" border-2 border-black bg-white pt-1 px-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-px hover:translate-y-px hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transition-all"> */}
             <Code />
-            {/* </div> */}
             <div className="">
               <h1 className="mt-2 font-black text-base md:text-2xl">
                 Custom Software

@@ -17,7 +17,7 @@ const projects = [
   },
   {
     imageSource: "/projects/setel.png",
-    projectTitle: "Setel je! Senangnya Promotion",
+    projectTitle: "Setel je! Senangnya Promotion Page",
     projectDescription:
       "A promotional campaign page for Setel highlighting the 'Setel je! Senangnya' event — offering new users instant rewards, bonus Mesra Points, and multiple ways to earn entries for prizes during the event period. This design showcases how promotions can be structured to drive user engagement and reward behaviour.",
     hrefLink: "https://www.setel.com/promotions/seteljesenangnya",
@@ -80,15 +80,14 @@ function Project({
 
       <div
         className={`p-6 ${
-          index % 2 === 0 ? "order-2 md:order-2" : "order-2 md:order-1"
-        } flex flex-col justify-center`}
+          index % 2 === 0 ? "md:order-2" : "md:order-1"
+        }order-2 flex flex-col justify-center`}
       >
         <h3 className="text-2xl font-black mb-4">{projectTitle}</h3>
         <p className="text-neutral-700 mb-4">{projectDescription}</p>
         {techStack && (
           <>
             <h4>Tech Stack</h4>
-
             <div className="flex gap-2 items-center">
               <div className="flex gap-2 items-center">
                 {techStack.map((tech) => (
