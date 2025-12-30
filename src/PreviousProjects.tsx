@@ -68,6 +68,8 @@ function Project({
   return (
     <a
       href={hrefLink}
+      target="_blank"
+      rel="noopener noreferrer"
       className="grid md:grid-cols-2 w-full my-6 gap-4 md:mb-24 md:gap-12 "
     >
       <div
@@ -75,7 +77,7 @@ function Project({
           index % 2 === 0 ? "order-2 md:order-1" : "order-1 md:order-2"
         } flex mx-4 justify-center items-center border-2 border-black bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all`}
       >
-        <img src={imageSource} alt={`${projectTitle} Project Image`} />
+        <img src={imageSource} alt={`${projectTitle}'s Project Image`} />
       </div>
 
       <div
