@@ -63,8 +63,16 @@ function App() {
         </div>
       </section>
 
-      <section className="flex justify-center items-center">
-        <div className="my-12 mr-2 flex aspect-video flex-col border-2 border-black bg-white px-4 py-2 ml-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all"></div>
+      <section className="flex flex-col justify-center items-center">
+        <h2 className="text-center mt-12 mb-4 font-black text-xl md:text-3xl">
+          Introduction Video
+        </h2>
+        <div className="my-6 mr-2 max-w-2xl mx-auto flex aspect-video flex-col border-2 border-black bg-white  ml-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">
+          <video controls>
+          <source  src="/videos/about-us.mp4" />
+            Your browser does not support the video tag.
+</video>
+        </div>
       </section>
       <section>
         <PreviousProjects />
